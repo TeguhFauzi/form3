@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>ADD PROJECT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="padding: 10;margin: 10;height: 20px;display: flex;justify-content: center;">
+                <div class="logHome" style="width: 30%;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: space-between;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home"><img src="/images/logD.png" alt="Bootstrap" width="30"
+                                    height="24"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AddProject" style="color: black;font-weight: bolder;">Add
+                                Project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 48%; display: flex;justify-content: end;">
+                    <a href="/Contact"><button
+                            style="padding: 5;;border: none;background-color: rgb(7, 3, 19);color: white;border-radius: 5px;"
+                            type="submit">Contact Me</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navselseeee -->
+    <div style="background-color:rgb(236, 236, 236);height: 91.3vh;">
+        <form action="/Add-blog" method="post">
+            <div style="display: flex;justify-content: center;align-items: center;height: 80px;">
+                <h1>ADD MY PROJECT</h1>
+            </div>
+            <div class="containerForm"
+                style="width: 100%;display: flex;justify-content: center;background-color:rgb(236, 236, 236);">
+                <div style="background-color: rgb(236, 236, 236); width: 500px;">
+                    <form>
+                        <div style="height: 80px;">
+                            <label for="title" class="form-label">Project Name</label>
+                            <input type="title" class="form-control" id="name" name="title"
+                                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        </div>
+                        <div style="width: 500px;display: flex;justify-content: space-between;">
+                            <div>
+                                <label>Start Date</label>
+                                <input
+                                    style="display: block;width: 230px;height: 40px;border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;"
+                                    type="date">
+                            </div>
+                            <div>
+                                <label>End Date</label>
+                                <input
+                                    style="display: block;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 230px;height: 40px;border: none;border-radius: 5px;"
+                                    type="date">
+                            </div>
+                        </div>
+
+                        <div class="textArea" style="height: 110px;display: flex;align-items: center;">
+                            <div class="form-floating">
+                                <label for="floatingTextarea2">Description</label>
+                                <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
+                                    name="content"
+                                    style="height: 70px;width: 500px; resize: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></textarea>
+                            </div>
+                        </div>
+                        <div style="width: 500px; height: 90px;">
+                            <div style="height: 30px;">
+                                <label for="floatingTextarea2">Technologies</label>
+                            </div>
+                            <div style="width: 450px;display: flex;">
+                                <div style="width: 150px;">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Java</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Javascript</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">PHP</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Phyton</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Upload Image</label>
+                            <input class="form-control" type="file" id="formFile"
+                                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        </div>
+                        <div style="width: 500px;display: flex;justify-content: end;align-items: center;height: 40px;">
+                            <button type="submit" class="btn btn-primary"
+                                style="border-radius: 15px;border: none;background-color: rgb(15, 15, 20);">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div>
+        <br><br>
+        <div style="display: flex;justify-content: center;text-align: center;">
+            <h1>MY PROJECT</h1>
+        </div>
+        <div class="containerBlog" style="width:100%;height:600px;display: flex;justify-content: center;">
+            <div style="width: 95%;display: flex;flex-wrap: wrap;">
+                <!-- DYNAMIC CONTENT -->
+                {{range $index, $data := .Blogs}}
+                <div class="cardB" style="width: 320px;height: 600px; display: flex;justify-content: center;">
+                    <div class="card"
+                        style="width: 18rem;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <img src="/images/blog.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="/Blog-detail/{{$index}}" style="text-decoration: none;color: black;">
+                                <h6 style="font-weight: bolder;">{{$data.Title}}
+                                </h6>
+                            </a>
+                            <p>Posted at :{{$data.Format_Date}}.</p>
+                            <p>Author : {{$data.Author}}</p>
+                            <p>Duration : 5 Months. </p>
+                            <p>{{$data.Content}}
+                            </p>
+                            <div class="icc" style="width: 16rem;height: 35px;display: flex;align-items: center;">
+                                <i id="Java" class="fa-brands fa-java" style="  font-size: 40px;
+                                padding: 5;margin-left: 10px;margin-right: 10px;"></i>
+                                <i id="Javascript" class="fa-brands fa-php" style="  font-size: 40px;
+                                padding: 5;
+                                margin-left: 10px;margin-right: 10px;"></i>
+                                <i id="PHP" class="fa-brands fa-square-js" style="  font-size: 40px;
+                                padding: 5;
+                                margin-left: 10px;margin-right: 10px;"></i>
+                                <i id="Phyton" class="fa-brands fa-python" style="  font-size: 40px;
+                                padding: 5;
+                                margin-left: 10px;margin-right: 10px;"></i>
+                            </div>
+                            <div class="card-body">
+                                <div style="width: 13rem;display: flex;justify-content: space-between;">
+                                    <a href="#" class="card-link"
+                                        style="text-decoration: none;color: black;font-weight: bolder;font-family: Arial, Helvetica, sans-serif;width: 5rem;display: flex;justify-content:center;">Edit</a>
+                                    <a href="/Delete/{{$index}}" class="card-link"
+                                        style="text-decoration: none;color: black;font-weight: bolder;font-family: Arial, Helvetica, sans-serif;display: flex;justify-content:center;">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                {{end}}
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>

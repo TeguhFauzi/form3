@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Creating Blog - detail</title>
+    <link rel="stylesheet" href="alll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="padding: 10;margin: 10;height: 20px;display: flex;justify-content: center;">
+                <div class="logHome" style="background-color: white;width: 30%;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: space-between;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home"><img src="/images/logD.png" alt="Bootstrap" width="30"
+                                    height="24"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home"
+                                style="font-weight: bolder;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AddProject" style="color: black;">Add Project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 48%; display: flex;justify-content: end;">
+                    <a href="/Contact"><button
+                            style="padding: 5;;border: none;background-color: rgb(7, 3, 19);color: white;border-radius: 5px;"
+                            type="submit">Contact Me</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div
+        style="display: flex;justify-content: center;width: 100%;align-items: center;height: 91vh;background-color: rgb(218, 220, 240);">
+        <div
+            style="width: 70%;background-color:rgb(236, 236, 236);display: block;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div style="display: flex;justify-content: center;font-weight: bolder;height: 50;align-items: center;">
+                <h3>{{.Blog.Title}}</h3>
+            </div>
+
+            <div style="display: flex;justify-content: center;height: 380px;">
+                <div style="width: 300px;">
+                    <img src="/images/blog.png" style="width: 280px;height: 350px;" />
+                </div>
+                <div style="background-color:rgb(236, 236, 236);width: 460px;">
+                    <p>Posted at : {{.Blog.Post_Date}}.</p>
+                    <p>Author : {{.Blog.Author}}</p>
+                    <p>Duration : 5 Months. </p>
+                    <div class="icc" style="width: 16rem;height: 35px;display: flex;align-items: center;">
+                        <i id="Java" class="fa-brands fa-java" style="  font-size: 40px;
+                        padding: 5;
+                        margin: 5;"></i>
+                        <i id="Javascript" class="fa-brands fa-php" style="  font-size: 40px;
+                        padding: 5;
+                        margin: 5;"></i>
+                        <i id="PHP" class="fa-brands fa-square-js" style="  font-size: 40px;
+                        padding: 5;
+                        margin: 5;"></i>
+                        <i id="Phyton" class="fa-brands fa-python" style="  font-size: 40px;
+                        padding: 5;
+                        margin: 5;"></i>
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <p>{{.Blog.Content}}.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
